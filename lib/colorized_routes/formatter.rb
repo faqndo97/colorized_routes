@@ -2,14 +2,14 @@ require "action_dispatch/routing/inspector"
 
 module ColorizedRoutes
   class Formatter < ::ActionDispatch::Routing::ConsoleFormatter::Base
-    CLEAR   = "\e[0m"
+    CLEAR = "\e[0m"
 
     # Colors
-    BLACK   = "\e[1;90m"
-    BLUE    = "\e[1;94m"
-    RED     = "\e[1;91m"
-    YELLOW  = "\e[1;93m"
-    WHITE   = "\e[1;97m"
+    BLACK = "\e[1;90m"
+    BLUE = "\e[1;94m"
+    RED = "\e[1;91m"
+    YELLOW = "\e[1;93m"
+    WHITE = "\e[1;97m"
 
     def initialize(width: IO.console_size[1])
       @width = width

@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+HOOKS_PATH = "bin/hooks"
+
+puts "Installing git hooks..."
+system("git config core.hooksPath #{HOOKS_PATH}")
